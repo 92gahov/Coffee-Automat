@@ -1,0 +1,175 @@
+.automat-main {
+    background-color: rgb(207, 196, 196);
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: 18px auto 0 auto;
+    padding: 14px 6px;
+}
+
+.products-main {
+    background-color: rgb(221, 195, 146);
+    height: 320px;
+    padding: 24px;
+}
+
+.products {
+    display: flex;
+    justify-content: space-between;
+    background-color: aliceblue;
+    margin-bottom: 18px;
+    width: 360px;
+    padding: 4px 0;
+}
+
+.products p {
+    font-size: 18px;
+    margin: 0;
+    padding: 8px;
+}
+
+.products button {
+    font-size: 18px;
+    border-radius: 50%;
+    padding: 8px;
+    border: 1px solid black;
+    background-color: rgb(9, 9, 139);
+    color: white;
+    margin-right: 8px;
+}
+
+.products button:hover {
+    cursor: pointer;
+    background-color: rgb(118, 118, 243);
+}
+
+.products button:active {
+    transform: translateY(1px);
+}
+
+.products>div:first-child {
+    width: 200px;
+}
+
+.chosen-product-main {
+    background-color: rgb(243, 238, 230);
+    width: 200px;
+    height: 64px;
+    margin: 0 auto;
+    padding: 12px 0;
+    text-align: center;
+    margin-top: 14px;
+    position: relative;
+}
+
+.chosen-product-main p {
+    font-size: 18px;
+}
+
+.chosen-product {
+    animation: product 1.4s;
+    position: absolute;
+    width: 200px;
+    left: 0;
+    display: none;
+}
+
+@keyframes product {
+    from {
+        margin-top: -34px;
+        opacity: 0;
+    }
+
+    to {
+        margin-top: 0;
+        opacity: 1;
+    }
+}
+
+.right-side {
+    padding-left: 14px;
+}
+
+.entered-money {
+    background-color: rgb(105, 241, 105);
+    padding: 18px 6px;
+    margin-top: 76px;
+}
+
+.entered-money span {
+    font-size: 18px;
+}
+
+.entered-money input {
+    width: 80px;
+    font-size: 18px;
+    margin-left: -2px;
+    border: none;
+    background-color: rgb(105, 241, 105);
+}
+
+.change-main {
+    background-color: aliceblue;
+    padding: 18px 4px;
+    text-align: center;
+    margin-top: 50px;
+    height: 60px;
+}
+
+.change-main p {
+    font-size: 18px;
+    margin: 0 10px 14px 0;
+}
+
+.change {
+    animation: change 1s;
+    display: none;
+    width: 140px;
+    margin-left: 50px;
+}
+
+.change span {
+    font-size: 18px;
+}
+
+.change input {
+    font-size: 18px;
+    border: none;
+    background-color: aliceblue;
+    width: 56px;
+    margin-left: -2px;
+}
+
+@keyframes change {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+.coins-main {
+    text-align: center;
+    margin: 24px auto 0 auto;
+    width: 34%;
+}
+
+.coins-main button {
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 8px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    margin: 0 8px;
+    border: 1px solid black;
+    background-color: rgb(247, 195, 53);
+}
+
+.coins-main button:hover {
+    cursor: pointer;
+    background-color: rgb(221, 163, 2);
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href=".//img/clipart1001069.png">
+    <title>Coffee Automat</title>
+</head>
+
+<body>
+    <main>
+        <div class="automat-main">
+            <div class="left-side">
+                <div class="products-main">
+                    <div class="products">
+                        <div>
+                            <p>Coffee - $0.80</p>
+                        </div>
+                        <div>
+                            <button id="coffee" type="button">Buy</button>
+                        </div>
+                    </div>
+                    <div class="products">
+                        <div>
+                            <p>Coffee with milk - $1.20</p>
+                        </div>
+                        <div>
+                            <button id="coffeeWithMilk" type="button">Buy</button>
+                        </div>
+                    </div>
+                    <div class="products">
+                        <div>
+                            <p>Milk - $1.00</p>
+                        </div>
+                        <div>
+                            <button id="milk" type="button">Buy</button>
+                        </div>
+                    </div>
+                    <div class="products">
+                        <div>
+                            <p>Hot chocolate - $1.40</p>
+                        </div>
+                        <div>
+                            <button id="hotChocolate" type="button">Buy</button>
+                        </div>
+                    </div>
+                    <div class="products">
+                        <div>
+                            <p>Tea - $0.60</p>
+                        </div>
+                        <div>
+                            <button id="tea" type="button">Buy</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="chosen-product-main">
+                    <div class="chosen-product">
+                        <p id="chosen-product"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="entered-money">
+                    <span>Inserted money &nbsp;&nbsp;$</span>
+                    <input id="entered-money-id" type="number" value="0.00" readonly>
+                </div>
+                <div class="change-main">
+                    <p>Change</p>
+                    <div class="change">
+                        <span>$</span>
+                        <input id="change" type="number" value="0.00" readonly>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="coins-main">
+            <button class="coin" type="button" data-price="0.05">$0.05</button>
+            <button class="coin" type="button" data-price="0.10">$0.10</button>
+            <button class="coin" type="button" data-price="0.20">$0.20</button>
+            <button class="coin" type="button" data-price="0.50">$0.50</button>
+            <button class="coin" type="button" data-price="1.00">$1.00</button>
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
